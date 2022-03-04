@@ -31,13 +31,14 @@ const del = require('del');
 
 ## Running the Script
 To run the script, use the npm run commands to execute.
-
+<br>
 -option 1<br>
 ```
 npm build:reset
 ```
 <br>
 -option 2<br>
+
 ```
 npm run build:reset
 ```
