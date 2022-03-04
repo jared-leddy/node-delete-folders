@@ -15,10 +15,17 @@ Quick JS snippet to delete folders in Node.js. This can be customized for any fo
 
 ## Customizing
 -create a variable and console line for each folder.<br>
-- - example below, you only have a "dist" folder to remove.
+- - example Javascript file below, you only have a "dist" folder to remove.
 ```js
-const deleteDistFolder = await del(['dist']);
-console.log('/dist Deleted files:\n', deleteDistFolder.join('\n'));
+
+const del = require('del');
+ 
+(async () => {
+    const deleteDistFolder = await del(['dist']);
+ 
+    console.log('/dist Deleted files:\n', deleteDistFolder.join('\n'));
+})();
+
 ```
 <br>
 
